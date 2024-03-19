@@ -12,7 +12,7 @@ public class BuildCommand : Command
 
     public override void Execute()
     {
-        var building = GameObject.Instantiate(buildingPrefab);
+        var building = GameObject.Instantiate(buildingPrefab, tile.transform);
         tile.SetBuilding(building);
     }
 }
