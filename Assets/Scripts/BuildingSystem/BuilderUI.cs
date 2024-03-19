@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class BuilderUI : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
+    {
+        ReloadUI();
+    }
+
+    public void ChooseBuilding()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void ReloadUI()
     {
-        
+
     }
 }
