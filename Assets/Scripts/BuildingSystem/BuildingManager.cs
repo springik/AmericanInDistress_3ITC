@@ -4,7 +4,7 @@ using UnityEngine;
 
 public sealed class BuildingManager : MonoBehaviour
 {
-    public static BuildingManager instance;
+    static BuildingManager instance;
     public static BuildingManager Instance
     {
         get
@@ -12,11 +12,14 @@ public sealed class BuildingManager : MonoBehaviour
             return instance;
         }
     }
-    Building chosenBuilding = null;
+    internal Building chosenBuilding { get; private set; } = null;
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else
+            Debug.LogWarning("Multiple singletons");
     }
 
     [SerializeField]
