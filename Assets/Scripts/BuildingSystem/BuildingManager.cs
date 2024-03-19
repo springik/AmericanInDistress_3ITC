@@ -5,7 +5,7 @@ using UnityEngine;
 public sealed class BuildingManager : MonoBehaviour
 {
     [SerializeField]
-    List<GameObject> buildings = new List<GameObject>();
+    List<Building> buildings = new List<Building>();
     
 
     
