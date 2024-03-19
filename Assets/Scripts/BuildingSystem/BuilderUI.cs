@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BuilderUI : MonoBehaviour
 {
-
+    [SerializeField]
+    GameObject buttonPrefab;
     void Start()
     {
         ReloadUI();
@@ -17,6 +18,6 @@ public class BuilderUI : MonoBehaviour
     
     void ReloadUI()
     {
-
+        
     }
 }
