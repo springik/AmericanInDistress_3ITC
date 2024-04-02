@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01d2e18e1e5393d4788a7b9feebcff61, type: 3}
-  m_Name: testbuilding
+  m_Name: TestBuilding2
   m_EditorClassIdentifier: 
   <resourceCosts>k__BackingField:
-  - name: Wood
-    amount: 5
-  <buildingName>k__BackingField: testBuilding
-  <prefab>k__BackingField: {fileID: 2993337937689365605, guid: e5bbfed90887f4a4981172ced60bec19,
+  - name: Metal
+    amount: 10
+  <buildingName>k__BackingField: Turret
+  <prefab>k__BackingField: {fileID: 3288135477752478457, guid: beeeb189403308946960381c964753b0,
     type: 3}

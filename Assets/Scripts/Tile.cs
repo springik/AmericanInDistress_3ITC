@@ -14,12 +14,8 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-
-        Debug.Log(cube);
-
         var cmd = new BuildCommand(
-            cube,
+            BuildingManager.Instance.chosenBuilding.prefab,
             this
             );
 
