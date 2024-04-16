@@ -12,6 +12,10 @@ public class BuilderUI : MonoBehaviour
     {
         ReloadUI();
     }
+    public void EndBuildPhase()
+    {
+        GameManager.Instance.SetState(GameManager.GameStates.FPSState);
+    }
 
     public void ChooseBuilding(Building building)
     {
