@@ -4,7 +4,7 @@ using UnityEngine;
 
 public sealed class BuildingManager : MonoBehaviour
 {
-    private static BuildingManager instance;
+    static BuildingManager instance;
     public static BuildingManager Instance
     {
         get

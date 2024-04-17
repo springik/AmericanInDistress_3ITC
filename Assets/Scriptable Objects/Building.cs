@@ -7,7 +7,6 @@ using UnityEngine;
 public class Building : ScriptableObject
 {
     [field: SerializeField] internal List<ResourceCost> resourceCosts { get; private set; } = new List<ResourceCost>();
-
     [field: SerializeField] public string buildingName {  get; private set; }
     [field: SerializeField] public GameObject prefab {  get; private set; }
 }
