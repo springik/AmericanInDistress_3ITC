@@ -14,11 +14,15 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        var cmd = new BuildCommand(
-            BuildingManager.Instance.chosenBuilding.prefab,
+        if (ResourceManager.Instance.CanAfordBuilding(BuildingManager.Instance.chosenBuilding))
+        {
+            var cmd = new BuildCommand(
+            BuildingManager.Instance.chosenBuilding,
             this
             );
-
-        CommandQueue.Instance.AddCommand(cmd);
+            CommandQueue.Instance.AddCommand(cmd);
+        }
+        else
+            Debug.Log("Not enough resorces");
     }
 }

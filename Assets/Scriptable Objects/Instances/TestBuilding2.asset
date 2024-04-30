@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d2e18e1e5393d4788a7b9feebcff61, type: 3}
   m_Name: TestBuilding2
   m_EditorClassIdentifier: 
-  <resourceCosts>k__BackingField:
-  - name: Metal
-    amount: 10
+  metalCost: 0
+  woodCost: 1
+  circuitCost: 0
   <buildingName>k__BackingField: Turret
   <prefab>k__BackingField: {fileID: 3288135477752478457, guid: beeeb189403308946960381c964753b0,
     type: 3}
